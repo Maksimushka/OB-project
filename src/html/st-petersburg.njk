@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% set pageTitle = "Регионы Санкт-Петербург" %}
+    <!--  -->
+    {% include "./components/head.njk" %}
+  </head>
+  <body class="body-wrapper">
+    <div class="overlay-gradient2 js-animated-gradient">
+      <div class="overlay-gradient2__inner">
+        <div class="span1"></div>
+        <div class="span2"></div>
+        <div class="span3"></div>
+        <div class="span4"></div>
+        <div class="span5"></div>
+        <div class="span6"></div>
+        <div class="span7"></div>
+      </div>
+    </div>
+    <div class="page-wrapper">
+      {% include "./blocks/header.njk" %}
+      <!--  -->
+
+      <main class="main">
+        <div class="main-menu">
+          <div class="container">
+            <div class="main-menu__inner">
+              <ul class="main-menu__list list-reset">
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="memorandum.html"
+                  >
+                    Меморандум
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="reforms.html"
+                  >
+                    Разработка реформ
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="elections-page.html"
+                  >
+                    Выборы
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="gum-help.html"
+                    >Гуманитарная помощь</a
+                  >
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded active"
+                    href="regions.html"
+                    >Регионы</a
+                  >
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="public-projects-page.html"
+                    >Общественные проекты</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        {% include "./blocks/regions-st-petersburg.njk" %}
+        <!--  -->
+      </main>
+
+      {% include "./blocks/footer.njk" %}
+    </div>
+
+    <!--  -->
+    {% include "./parts/btn-scroll-top.njk" %}
+    <!--  -->
+    {% include "./parts/search-modal.njk" %}
+    <!--  -->
+    {% include "./parts/form-join.njk" %}
+    <!--  -->
+    {% include "./parts/form-support.njk" %}
+    <!--  -->
+    {% include "./components/scripts.njk" %}
+  </body>
+</html>

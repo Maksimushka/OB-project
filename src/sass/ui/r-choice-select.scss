@@ -1,0 +1,104 @@
+.r-choice-select {
+  // .r-choice-select__control
+
+  &__control {
+  }
+
+  .choices {
+    width: 100%;
+
+    &:hover,
+    &.is-open {
+      .choices__list--single .choices__item {
+        color: #070707;
+      }
+    }
+
+    &.is-flipped {
+      .choices__list--dropdown,
+      .choices__list[aria-expanded] {
+        top: auto;
+        bottom: 100%;
+      }
+    }
+  }
+
+  .choices__inner {
+    background-color: #f2f2f3;
+
+    border: 1px solid transparent;
+  }
+
+  .choices__list--single .choices__item.choices__placeholder {
+    color: #8e8e8e;
+    opacity: 0.7;
+    font-weight: 400;
+  }
+
+  .choices__list--single {
+    padding: 12px 15px 12px 15px;
+  }
+
+  .choices__list--single .choices__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 17px;
+    font-weight: 400;
+
+    &::after {
+      content: '';
+      width: 28px;
+      height: 28px;
+      margin-left: 10px;
+      flex-shrink: 0;
+
+      background-image: url('../../img/svg/sprite1.svg#triangle-down');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .choices[data-type*='select-one']::after {
+    display: none;
+  }
+
+  .choices[data-type*='select-one'] .choices__inner {
+    padding: 0;
+  }
+
+  .choices__list--dropdown,
+  .choices__list[aria-expanded] {
+    padding: 2.5px 0;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    background: #fbfbfb;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+  }
+
+  .choices__list--dropdown .choices__item,
+  .choices__list[aria-expanded] .choices__item {
+    padding: 7.5px 15px;
+    font-size: 16px;
+    color: #070707;
+  }
+
+  .choices__list--dropdown .choices__placeholder {
+    display: none;
+  }
+
+  // Текст press enter to select
+  .choices__list--dropdown .choices__item--selectable::after,
+  .choices__list[aria-expanded] .choices__item--selectable::after {
+    display: none;
+  }
+
+  .choices__list--dropdown .choices__item--selectable,
+  .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 20px;
+  }
+}

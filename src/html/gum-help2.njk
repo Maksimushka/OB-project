@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% set pageTitle = "Гуманитарная помощь" %}
+    <!--  -->
+    {% include "./components/head.njk" %}
+  </head>
+  <body class="body-wrapper">
+    <div class="page-wrapper">
+      <div class="overlay-gradient2 js-animated-gradient">
+        <div class="overlay-gradient2__inner">
+          <div class="span1"></div>
+          <div class="span2"></div>
+          <div class="span3"></div>
+          <div class="span4"></div>
+          <div class="span5"></div>
+          <div class="span6"></div>
+          <div class="span7"></div>
+        </div>
+      </div>
+      {% include "./blocks/header.njk" %}
+      <!--  -->
+
+      <main class="main">
+        <div class="main-menu">
+          <div class="container">
+            <div class="main-menu__inner">
+              <ul class="main-menu__list list-reset">
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="memorandum.html"
+                  >
+                    Меморандум
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="reforms.html"
+                  >
+                    Разработка реформ
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="elections-page.html"
+                  >
+                    Выборы
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded active"
+                    href="gum-help.html"
+                    >Гуманитарная помощь</a
+                  >
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="regions.html"
+                    >Регионы</a
+                  >
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="public-projects-page.html"
+                    >Общественные проекты</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <section class="gum">
+          <div class="container">
+            <ul class="reforms__menu list-reset">
+              <li class="reforms__item">
+                <a href="gum-help.html">Беженцы</a>
+              </li>
+              <li class="reforms__item active">
+                <a href="gum-help2.html">Медикаменты</a>
+              </li>
+            </ul>
+
+            <div class="reforms__group reforms__group--mb-xlg" id="kit">
+              <h2 class="reforms__suptitle heading-2">Народная аптечка</h2>
+
+              <div class="reforms__text reforms__text--md">
+                <p>
+                  Народная аптечка (народнаяаптечка.рф) — проект сооснователя
+                  Общества.Будущее Данила Махницкого. Цель проекта — обеспечить
+                  мобилизованных средствами первой медицинской помощи, которых
+                  им не хватает. После сбора пожертвований и закупки
+                  медикаментов аптечки упаковываются в удобном формате. Каждая
+                  такая аптечка — это чья-то спасённая жизнь: на фронте или в
+                  обстреливаемом городе.
+                  <br />
+                  <br />
+                  За время существования проекта у нас работали 21 волонтёр,
+                  которые собрали больше 1200 аптечек!
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="reforms__group reforms__group--full reforms__group--mb-md"
+            >
+              <div
+                class="reforms__free-slider free-slider swiper-container js-free-slider"
+              >
+                <div class="swiper-wrapper">
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/free-5.jpg" width="420" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/free-6.jpg" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/free-7.jpg" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/11.jpg" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/22.jpg" alt="" />
+                  </div>
+                </div>
+                <!-- Add Arrows -->
+                <div
+                  class="free-slider__btn free-slider__btn--prev r-btn-circle r-btn-circle--solid"
+                >
+                  <svg class="s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#arrow-left" />
+                  </svg>
+                </div>
+                <div
+                  class="free-slider__btn free-slider__btn--next r-btn-circle r-btn-circle--solid"
+                >
+                  <svg class="s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#arrow-right" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="reforms__group reforms__group--mb-md" id="medicines">
+              <h2 class="reforms__suptitle heading-2">
+                Поставляем медикаменты — спасаем жизнь
+              </h2>
+
+              <div class="reforms__text reforms__text--md">
+                <p>
+                  Мы стали заниматься медикаментами для жителей Донбасса и
+                  беженцев ещё весной 2022 года.
+                  <br />
+                  С середины апреля 2022 мы были единственной организацией,
+                  которая централизованно распространяла лекарства в Херсоне. За
+                  это время мы успели отгрузить четыре полных микроавтобуса — 18
+                  тысяч упаковок жизненно необходимых лекарств. За помощью к нам
+                  обратились 5 тысяч человек, для которых миссия ОБ была
+                  единственной возможностью получить нужные препараты.
+                  <br />
+                  Затем мы направили необходимые медикаменты в больницу Калинина
+                  и Институт хирургии им. Гусака в Донецке.
+                  <br />
+                  Позднее мы собрали более 4 миллионов рублей и смогли закупить
+                  больше 80 разных позиций медикаментов и расходников для
+                  раненых в донбасских госпиталях.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+      </main>
+
+      {% include "./blocks/footer.njk" %}
+    </div>
+
+    <!--  -->
+    {% include "./parts/btn-scroll-top.njk" %}
+    <!--  -->
+    {% include "./parts/search-modal.njk" %}
+    <!--  -->
+    {% include "./parts/form-join.njk" %}
+    <!--  -->
+    {% include "./parts/form-support.njk" %}
+    <!--  -->
+    {% include "./components/scripts.njk" %}
+  </body>
+</html>

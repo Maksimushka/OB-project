@@ -1,0 +1,162 @@
+.header {
+  // .header__inner
+
+  &__inner {
+    display: flex;
+    padding-top: 75px;
+    margin-bottom: 48px;
+
+    @media (max-width: $md) {
+      position: relative;
+      flex-wrap: wrap;
+      padding-top: 88px;
+    }
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $xs) {
+      margin-bottom: 28px;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    margin-right: 23px;
+
+    @media (max-width: $lg) {
+      max-width: 400px;
+    }
+
+    @media (max-width: $md) {
+      width: 100%;
+      max-width: 500px;
+      margin-right: 200px;
+      margin-bottom: 19px;
+    }
+
+    @media (max-width: $sm) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $xs) {
+      max-width: 291px;
+    }
+  }
+
+  // .header__controls
+
+  &__controls {
+    padding-top: 10px;
+    margin-right: auto;
+
+    @media (max-width: $md) {
+      padding-top: 0;
+    }
+
+    @media (max-width: $xs) {
+      width: 100%;
+    }
+  }
+
+  // .header__controls-row
+
+  &__controls-row {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .header__controls-title
+
+  &__controls-title {
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 6px 22px 6px 22px;
+    margin-right: 8px;
+
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 185%;
+      background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+
+      @media (max-width: $lg) {
+        max-width: 170%;
+      }
+
+      @media (max-width: $xs) {
+        max-width: 80vw;
+      }
+    }
+  }
+
+  // .header__controls-btn
+
+  &__controls-btn {
+    --r-btn-padding-x: 10px;
+
+    min-width: 172px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.17px;
+
+    @media (max-width: $xs) {
+      min-width: auto;
+      width: 100%;
+      max-width: 50%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  // .header__search
+
+  &__search {
+    @media (max-width: $sm) {
+      position: absolute;
+      right: 0px;
+      top: 30px;
+    }
+
+    .s-icon {
+      fill: #fff;
+    }
+  }
+
+  // .header__bottom
+
+  &__bottom {
+    margin-top: 48px;
+
+    @media (max-width: $xs) {
+      margin-top: 28px;
+    }
+  }
+
+  // .header__bottom-text
+
+  &__bottom-text {
+    margin: 0;
+    max-width: 700px;
+
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

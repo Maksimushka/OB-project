@@ -1,0 +1,35 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  // .breadcrumbs__item
+
+  &__item {
+    position: relative;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    .s-icon {
+      margin-right: 8px;
+      width: 52px;
+    }
+
+    &.active {
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: 8px;
+
+      @media (max-width: $sm) {
+        font-size: 25px;
+      }
+
+      @media (max-width: $xs) {
+        font-size: 18px;
+      }
+    }
+  }
+}

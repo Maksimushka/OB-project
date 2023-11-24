@@ -1,0 +1,73 @@
+// Global
+@import 'global/normilize.scss';
+@import 'global/libs.scss';
+@import 'global/vars.scss';
+@import 'global/mixins.scss';
+@import 'global/fonts.scss';
+@import 'global/s-icon.scss';
+@import 'global/global.scss';
+
+// UI
+@import 'ui/r-btn.scss';
+@import 'ui/r-btn-circle.scss';
+@import 'ui/r-searchbar.scss';
+@import 'ui/r-control.scss';
+@import 'ui/r-choice-select.scss';
+
+// Components
+@import 'components/logo.scss';
+@import 'components/news-card.scss';
+@import 'components/form-block.scss';
+@import 'components/list-points.scss';
+@import 'components/constitution-slider.scss';
+@import 'components/experts-slider.scss';
+@import 'components/resume-block.scss';
+@import 'components/big-slider.scss';
+@import 'components/facts-list.scss';
+@import 'components/progress-line';
+@import 'components/r-people.scss';
+@import 'components/violation-list.scss';
+@import 'components/project-card.scss';
+@import 'components/breadcrumbs.scss';
+@import 'components/free-slider.scss';
+
+// Parts
+@import 'parts/search-modal.scss';
+@import 'parts/form-join.scss';
+@import 'parts/btn-scroll-top.scss';
+
+// Blocks
+@import 'blocks/header.scss';
+
+@import 'blocks/main-menu.scss';
+@import 'blocks/news-slider.scss';
+@import 'blocks/memorandum.scss';
+@import 'blocks/reforms.scss';
+@import 'blocks/regions.scss';
+@import 'blocks/gum.scss';
+
+@import 'blocks/footer.scss';
+
+.site-pages {
+  padding: 50px;
+  max-width: 500px;
+  // margin: 0 auto;
+
+  ol {
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: 22px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    a {
+      color: #070707;
+      border-bottom: 1px solid #070707;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.constitution-slider {
+  position: relative;
+  height: 379px;
+  padding-bottom: 33px;
+
+  @media (max-width: $md) {
+    height: auto;
+    max-height: 379px;
+  }
+
+  @media (max-width: $xs) {
+    height: 51vw;
+  }
+
+  // .constitution-slider__slide
+
+  &__slide {
+    padding: 0 68px;
+    box-sizing: border-box;
+
+    @media (max-width: $sm) {
+      padding: 0 50px;
+    }
+
+    @media (max-width: $xs) {
+      padding: 0 35px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  // .constitution-slider__btn
+
+  &__btn {
+    position: absolute;
+    top: calc(50% - 13px);
+    bottom: auto;
+    z-index: 10;
+    transform: translateY(-50%);
+
+    @media (max-width: $xs) {
+      width: 30px;
+      height: 30px;
+    }
+
+    // .constitution-slider__btn--prev
+
+    &--prev {
+      left: 0;
+    }
+
+    // .constitution-slider__btn--next
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  // .constitution-slider__pagination
+
+  &__pagination {
+    bottom: 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,46 @@
+.news-card {
+  // .news-card__image
+
+  &__image {
+    height: 230px;
+    width: 100%;
+
+    img {
+      @include imageCenter;
+    }
+  }
+
+  // .news-card__content
+
+  &__content {
+    padding-top: 22px;
+  }
+
+  // .news-card__title
+
+  &__title {
+    margin: 0 0 5px;
+
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  // .news-card__text
+
+  &__text {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

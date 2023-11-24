@@ -1,0 +1,95 @@
+.r-people {
+  position: relative;
+
+  // .r-people__wrapper
+
+  &__wrapper {
+    @media (min-width: 769px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      column-gap: 42px;
+      row-gap: 42px;
+      text-align: center;
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 260px);
+    }
+  }
+
+  // .r-people__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  // .r-people__image
+
+  &__image {
+    width: 182px;
+    height: 182px;
+    margin-bottom: 23px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      @include imageCenter;
+    }
+  }
+
+  // .r-people__content
+
+  &__content {
+    color: #000;
+    font-size: 16px;
+    line-height: normal;
+
+    @media (max-width: $sm) {
+      text-align: center;
+    }
+  }
+
+  // .r-people__title
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  // .r-people__text
+
+  &__text {
+    p {
+      margin: 0;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+    z-index: 10;
+
+    display: none;
+
+    @media (max-width: $sm) {
+      display: flex;
+    }
+
+    @media (max-width: $xs) {
+      width: 35px;
+      height: 35px;
+    }
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}

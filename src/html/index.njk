@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% set pageTitle = "Навигация по страницам" %}
+    <!--  -->
+    {% include "./components/head.njk" %}
+  </head>
+  <body class="body-wrapper">
+    <div class="overlay-gradient"></div>
+    <div class="page-wrapper">
+      {% include "./blocks/header.njk" %}
+      <!--  -->
+      <main class="main">
+        <div class="container">
+          <h1>Страницы сайты</h1>
+          <div class="site-pages">
+            <ol>
+              <li><a href="./main.html">Главная страница</a></li>
+              <li><a href="./memorandum.html">Меморандум</a></li>
+              <li><a href="./reforms.html">Реформы конституци</a></li>
+              <li>
+                <a href="./reforms-second-page.html">
+                  Реформы экономическая реформа
+                </a>
+              </li>
+              <li>
+                <a href="./reforms-third-page.html">
+                  Реформы дистанционное голосование
+                </a>
+              </li>
+              <li>
+                <a href="./elections-page.html"> Выборы </a>
+              </li>
+              <li>
+                <a
+                  href="./regions.html
+                "
+                >
+                  Регионы
+                </a>
+              </li>
+              <li>
+                <a href="./moscow.html"> Регионы Москва </a>
+              </li>
+              <li>
+                <a href="./ekaterinburg.html"> Регионы Екатеринбург </a>
+              </li>
+              <li>
+                <a href="./st-petersburg.html"> Регионы Питер </a>
+              </li>
+              <li>
+                <a href="./gum-help.html">Гум помощь</a>
+              </li>
+              <li>
+                <a href="./public-projects-page.html">Общественные проекты</a>
+              </li>
+              <li>
+                <a href="./moscow-forest.html">Битцевский лес</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </main>
+
+      {% include "./blocks/footer.njk" %}
+    </div>
+
+    <!--  -->
+    {% include "./components/scripts.njk" %}
+  </body>
+</html>

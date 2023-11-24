@@ -1,0 +1,48 @@
+.main-menu {
+  // .main-menu__inner
+
+  &__inner {
+    padding: 32px 0 26px;
+
+    @media (max-width: $sm) {
+      padding: 24px 0 22px;
+    }
+  }
+
+  // .main-menu__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  // .main-menu__item
+
+  &__item {
+    margin-bottom: 6px;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    @media (max-width: $sm) {
+      margin-right: 11px;
+    }
+  }
+
+  // .main-menu__link
+
+  &__link {
+    --r-btn-padding-x: 10px;
+    --r-btn-padding-y: 10px;
+
+    color: #010101;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    // font-family: SF Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+  }
+}

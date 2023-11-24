@@ -1,0 +1,820 @@
+<div class="reforms">
+  <div class="container">
+    <div
+      class="reforms__inner js-show-constitution__container"
+      id="targetBlock"
+    >
+      <h1 class="reforms__title heading-1">Реформы</h1>
+
+      <ul class="reforms__menu list-reset">
+        <li class="reforms__item active">
+          <a href="reforms.html">Конституция</a>
+        </li>
+        <li class="reforms__item">
+          <a href="reforms-second-page.html">Экономическая реформа</a>
+        </li>
+        <li class="reforms__item">
+          <a href="reforms-third-page.html">Дистанционное голосование</a>
+        </li>
+      </ul>
+
+      <div class="reforms__group">
+        <h2 class="reforms__suptitle heading-2">Оглавление конституции</h2>
+        <ol class="reforms__list">
+          <li class="reforms__list-item">
+            <a class="reforms__list-link" href="#constitution-text"
+              >Текст конституции</a
+            >
+          </li>
+          <li class="reforms__list-item">
+            <a class="reforms__list-link" href="#report">Доклад</a>
+          </li>
+          <li class="reforms__list-item">
+            <a class="reforms__list-link" href="#experts">Наши эксперты</a>
+          </li>
+          <li class="reforms__list-item">
+            <a class="reforms__list-link" href="#video">Видео</a>
+          </li>
+          <li class="reforms__list-item">
+            <a class="reforms__list-link" href="#voting">Голосование</a>
+          </li>
+          <li class="reforms__list-item">
+            <a class="reforms__list-link" href="#progress"
+              >Ход подготовки проекта</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="reforms__group">
+        <h2 class="reforms__suptitle heading-2">Преамбула</h2>
+        <div class="reforms__text">
+          <p>
+            Мы, русские, и все другие коренные народы России,как верующие в
+            Бога, так и не разделяющие этой веры,проживающие как на территории
+            страны, так и за её пределами,понимая нацию как союз ушедших,
+            настоящих и будущих поколений,провозглашая незыблемые основы
+            гражданской свободы на началах действительной неприкосновенности
+            личности, свободы совести, слова, собраний и союзов,объявляя
+            незыблемым право частной собственности,свято чтя предков, всегда
+            стремившихся к свободе и справедливости, построивших великую страну
+            и переживших тяжёлые испытания,уважая их выбор на каждом
+            историческом этапе,понимая свою ответственность за сохранение языка,
+            культуры, традиций и ценностей нашего народа, обязуясь оберегать и
+            приумножать это наследие,осознавая необходимость способствовать
+            воссоединению разделённой нации,защищая принципы национального
+            суверенитета, целостности и единства России,принимаем настоящую
+            Конституцию.
+          </p>
+          <p>
+            Мы выделили все изменения в тексте и отметили
+            <span class="text-strong-purple">фиолетовым</span> пункты с простыми
+            изменениями. <br />
+            Пункты с более важными ключевыми изменениями отметили
+            <span class="text-strong-green">зелёным</span>.
+          </p>
+        </div>
+      </div>
+
+      {% include './constitution/chapter1.njk' %}
+      <!--  -->
+      {% include './constitution/chapter2.njk' %}
+      <!--  -->
+      {% include './constitution/chapter3.njk' %}
+      <!--  -->
+      {% include './constitution/chapter4.njk' %}
+      <!--  -->
+      {% include './constitution/chapter5.njk' %}
+      <!--  -->
+      {% include './constitution/chapter6.njk' %}
+      <!--  -->
+      {% include './constitution/chapter7.njk' %}
+      <!--  -->
+      {% include './constitution/chapter8.njk' %}
+      <!--  -->
+      {% include './constitution/chapter9.njk' %}
+      <!--  -->
+
+      <div class="reforms__navigation-fixed" id="myButton">
+        <div class="container">
+          <button
+            class="reforms__btn-fixed r-btn r-btn--solid js-show-constitution"
+          >
+            <span class="reforms__btn-info-hide">Свернуть</span>
+          </button>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <div class="reforms__group">
+        <div class="reforms__row">
+          <button
+            class="reforms__btn-info r-btn r-btn--solid js-show-constitution"
+          >
+            <span class="reforms__btn-info-show">Читать целиком</span>
+            <span class="reforms__btn-info-hide">Свернуть</span>
+          </button>
+          <a
+            class="reforms__btn-info r-btn r-btn--solid r-btn--icon"
+            href="img/logo.svg"
+            download
+          >
+            Скачать текст
+            <svg class="reforms__btn-info s-icon s-icon--sm">
+              <use xlink:href="img/svg/sprite1.svg#download-icon" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="reforms__inner" id="report">
+      <div class="reforms__group reforms__group--full">
+        <h2 class="reforms__suptitle heading-2">Доклад</h2>
+
+        <div class="reforms__text">
+          <p>
+            Текст конституции сопровождается докладом. <br />
+            Мы сделали доклад в наглядной форме – в виде слайдов. В нем мы
+            рассказываем о конституционных проблемах нынешней России,
+            анализируем причины их возникновения и предлагаем пути решения.
+            <br />
+            Помимо этого в докладе отражены и некоторые реформы, которые
+            необходимо реализовать, чтобы раскрыть потенциал предложенных
+            конституционных изменений.
+          </p>
+        </div>
+        <div
+          class="reforms__constitution-slider constitution-slider swiper-container js-constitution-slider"
+        >
+          <div class="swiper-wrapper">
+            {% for item in
+            [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65
+            ] %}
+            <div class="constitution-slider__slide swiper-slide">
+              <img src="img/reforms/report/{{ item }}.jpeg" alt="" />
+            </div>
+            {% endfor %}
+          </div>
+          <!-- Add Arrows -->
+          <div
+            class="constitution-slider__btn constitution-slider__btn--prev r-btn-circle r-btn-circle--solid"
+          >
+            <svg class="s-icon">
+              <use xlink:href="img/svg/sprite1.svg#arrow-left" />
+            </svg>
+          </div>
+          <div
+            class="constitution-slider__btn constitution-slider__btn--next r-btn-circle r-btn-circle--solid"
+          >
+            <svg class="s-icon">
+              <use xlink:href="img/svg/sprite1.svg#arrow-right" />
+            </svg>
+          </div>
+          <!-- Pagination -->
+          <div class="constitution-slider__pagination swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="reforms__group reforms__group--full" id="experts">
+        <h2 class="reforms__suptitle heading-2">Наши эксперты</h2>
+
+        <div class="reforms__text">
+          <p>
+            В ходе подготовки реформы мы обращались к профильным экспертам.
+            <br />
+            Вы можете ознакомиться с рецензиями от наших научных консультантов и
+            экспертов. Многое из рецензий учтено в итоговом проекте Конституции
+            Общества.Будущее.
+          </p>
+        </div>
+        <div
+          class="reforms__experts-slider experts-slider swiper-container js-experts-slider"
+        >
+          <div class="swiper-wrapper">
+            <div class="experts-slider__slide swiper-slide">
+              <div class="experts-slider__resume resume-block">
+                <div class="resume-block__image">
+                  <img src="img/experts/1.png" alt="Екатерина Мишина" />
+                </div>
+                <div class="resume-block__info">
+                  <div class="resume-block__title">Екатерина Мишина</div>
+                  <div class="resume-block__text-info">
+                    <p>
+                      Научный консультант <br />
+                      Независимый эксперт по конституционному праву Доцент
+                      НИУ-ВШЭ в 2005 – 2014 гг.
+                    </p>
+                  </div>
+                  <div class="resume-block__text">
+                    <p>
+                      Авторы с самого начала берут очень верную тональность и в
+                      статье 3 предлагают удачную замену понятия «народ» на
+                      «граждане».Предусмотренная в проекте унификация
+                      наименований разнообразных субъектов федерации и введение
+                      общее наименование «губерния» для всех субъектов
+                      федерации, представляется правильной и логичной.Особенно
+                      хочу отметить важность установления принципа выборности
+                      губернаторов, с учетом непростой истории этой процедуры в
+                      нашей стране, а также выборности верхней палаты
+                      Федерального Собрания. Помимо многочисленных и весомых
+                      достоинств в проекте имеется ряд недостатков. Неудачной
+                      является неоднократно используемая авторами формулировка
+                      «русский и все коренные народы России». Во-первых, многими
+                      она будет восприниматься как «русский и др.», т.е.
+                      определяющая русский народ как главный и другие как
+                      второстепенные. Такого противопоставления хотелось бы
+                      избежать. Читать отзыв целиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experts-slider__slide swiper-slide">
+              <div class="experts-slider__resume resume-block">
+                <div class="resume-block__image">
+                  <img src="img/experts/2.png" alt="Матвей Цзен" />
+                </div>
+                <div class="resume-block__info">
+                  <div class="resume-block__title">Матвей Цзен</div>
+                  <div class="resume-block__text-info">
+                    <p>
+                      Научный консультант <br />
+                      Адвокат
+                    </p>
+                  </div>
+                  <div class="resume-block__text">
+                    <p>
+                      Прежде чем рассмотреть чуть подробнее каждый из блоков
+                      проекта «ОБ», надо взглянуть на Проект в целом и сравнить
+                      его с действующей (без учёта путинского «обнуления»)
+                      Конституцией. И, первое, что бросается в глаза, это то,
+                      что проект «ОБ» очень и очень похож не нынешнюю
+                      Конституцию, фактически общего у них больше, чем
+                      различий.Очевидно, что это сознательный выбор авторов
+                      проекта, который дает им два очевидных плюса. Первый – это
+                      то, что проект построен на основе уже ранее написанного
+                      текста, в который, в своё время, были вложены значительные
+                      интеллектуальные ресурсы, что де-факто гарантирует
+                      достаточное качество текста (написание хорошей конституции
+                      – очень непростая задача), и второй – это то, что принятие
+                      проекта «ОБ» в качестве действующей Конституции не
+                      означает революционного переустройства общества и
+                      государства, а будет скорее похоже на перезагрузку или
+                      обновление программного обеспечения: появятся новые
+                      функции, а старые ошибки будут исправлены.Фактически
+                      авторы проекта «ОБ» предлагают очистить «программный код»
+                      Конституции 1993 года от автократичных правок Ельцина и
+                      Путина, оставив в сохранности её ценностное «ядро» -
+                      Россию как либеральную демократическую федерацию. Читать
+                      отзыв целиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experts-slider__slide swiper-slide">
+              <div class="experts-slider__resume resume-block">
+                <div class="resume-block__image">
+                  <img src="img/experts/3.png" alt="Екатерина Басманова" />
+                </div>
+                <div class="resume-block__info">
+                  <div class="resume-block__title">Екатерина Басманова</div>
+                  <div class="resume-block__text-info">
+                    <p>
+                      Научный консультант <br />
+                      Партнёр Юридической фирмы "Ладонин и партнёры", кандидат
+                      юридических наук
+                    </p>
+                  </div>
+                  <div class="resume-block__text">
+                    <p>
+                      В целом текст Конституции написан грамотно, без
+                      существенных юридических недочетов.Можно сказать, что
+                      представленный проект преемственен текущей Конституции,
+                      наследует ее традиции (а местами и дословно воспроизводит
+                      текст). Но поскольку это проект, хотелось бы больше
+                      реформаторства, больше конкретики и эксперимента. Далеко
+                      не все новаторские предложения, содержащиеся в
+                      сопроводительной документации, в тексте Конституции
+                      отражены. Постоянные отсылки к федеральным законам,
+                      которые еще будут приняты, не лучший способ обеспечения
+                      прав, как показывает жизнь. Закон может искажать дух
+                      Конституции, даже формально не нарушая ее. Читать отзыв
+                      целиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experts-slider__slide swiper-slide">
+              <div class="experts-slider__resume resume-block">
+                <div class="resume-block__image">
+                  <img src="img/experts/4.png" alt="Леонид Балановский" />
+                </div>
+                <div class="resume-block__info">
+                  <div class="resume-block__title">Леонид Балановский</div>
+                  <div class="resume-block__text-info">
+                    <p>
+                      Научный консультант <br />
+                      Депутат Совета депутатов муниципального округа Аэропорт
+                      города Москвы
+                    </p>
+                  </div>
+                  <div class="resume-block__text">
+                    <p>
+                      Несмотря на большое сходство с Конституцией 2019
+                      Конституция ОБ предлагает ряд ярких отличий:Хороший язык:
+                      Россия, Государственный Совет, губернии делают текст более
+                      легким, компактным и красивым. Особо отрадно включение в
+                      преамбулу 4-го абзаца Манифеста 17 октября 1905 г.Разделы
+                      «Права и свободы» и «Местное самоуправление»
+                      «инвентаризированы» и уточнены с учетом опыта,
+                      накопленного за 27 лет применения Конституции.Раздел
+                      «Федеративное устройство» – по сути, обходит острые углы,
+                      ограничиваясь переименованием всех ныне существующих типов
+                      субъектов федерации в губернии. При этом, список губерний
+                      не приводится, а губернии равноправны.Сменяемость и
+                      демократизация власти – комплекс самых очевидных и важных
+                      изменений - сокращение срока полномочий президента,
+                      Госдумы и Госсовета до 4 лет, прямые выборы верхней палаты
+                      парламента и членов Конституционного Собрания.Баланс
+                      ветвей власти очень важный и, на мой взгляд, самый спорный
+                      аспект Конституции ОБ.1.Раздел «Судебная система»
+                      предусматривает изменение порядка формирования
+                      Конституционного суда (по одной трети от президента и
+                      каждой из палат парламента). Читать отзыв целиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experts-slider__slide swiper-slide">
+              <div class="experts-slider__resume resume-block">
+                <div class="resume-block__image">
+                  <img src="img/experts/5.png" alt="Алексей Нечаев" />
+                </div>
+                <div class="resume-block__info">
+                  <div class="resume-block__title">Алексей Нечаев</div>
+                  <div class="resume-block__text-info">
+                    <p>
+                      Научный консультант <br />
+                      Юрист, руководитель пермского отделения
+                      Национально-демократической партии
+                    </p>
+                  </div>
+                  <div class="resume-block__text">
+                    <p>
+                      Представленная командой Общество.Будущее Конституция мне
+                      понравилась.Особое место отнесено положению судебной
+                      власти в системе обеспечения нормальной жизни
+                      общества.Перераспределены роли и компетенции других ветвей
+                      власти и х институтов. Убраны позорные даже для студентов
+                      юрфака несоответствия и недоговоренности. Прописан чёткий
+                      механизм изменения Конституции. Всё это составлено в
+                      стройный готовый документ.За проделанную большую работу
+                      команду Общества.Будущее можно только благодарить. Читать
+                      отзыв целиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experts-slider__slide swiper-slide">
+              <div class="experts-slider__resume resume-block">
+                <div class="resume-block__image">
+                  <img src="img/experts/6.png" alt="Александр Верещагин" />
+                </div>
+                <div class="resume-block__info">
+                  <div class="resume-block__title">Александр Верещагин</div>
+                  <div class="resume-block__text-info">
+                    <p>Доктор права, Эссекский университет, Великобритания</p>
+                  </div>
+                  <div class="resume-block__text">
+                    <p>
+                      Я не отваживаюсь оценить проект в целом, сосредоточусь
+                      лишь на главных моментах. Я не согласен с ключевой вещью,
+                      сохраненной в этой версии конституции - федерализмом
+                      советского типа. В России федерализм есть, как известно,
+                      порождение ленинизма, коммунистической утопии, и никаких
+                      органических корней не имеет. Мне нравится, что Вы всех
+                      переименовали в губернии, но не нравится, что оставили
+                      федерализм как общий принцип, осеняющий собою всё. Здесь
+                      есть противоречие: переименование всех советских
+                      административно-территориальных образований в губернии -
+                      это поклон в сторону исторической унитарной традиции, но
+                      "губернатор как высший исполнительный орган" находится в
+                      противоречии с ней. Двум богам служить нельзя. Читать
+                      отзыв целиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experts-slider__slide swiper-slide">
+              <div class="experts-slider__resume resume-block">
+                <div class="resume-block__image">
+                  <img src="img/experts/7.png" alt="Станислав Станских" />
+                </div>
+                <div class="resume-block__info">
+                  <div class="resume-block__title">Станислав Станских</div>
+                  <div class="resume-block__text-info">
+                    <p>
+                      Российский юрист-конституционалист, научный сотрудник
+                      Университета Северной Каролины в Чапел-Хилле, приглашенный
+                      исследователь юридического факультета Висконсинского
+                      университета (США)
+                    </p>
+                  </div>
+                  <div class="resume-block__text">
+                    <p>
+                      Проект реформы Романа Юнемана полезен конституционному
+                      движению.Проект Конституции предваряется основательной
+                      аналитической пояснительной запиской, где показываются
+                      конституционная история, родовая травма Конституции 1993
+                      года, проблемы существующей Конституции, зарубежный опыт,
+                      предлагается решение назревших проблем не только на уровне
+                      Конституции, но при реформе текущего законодательства. По
+                      сути, разработчики инициируют цельный проект
+                      конституционной реформы.Проект Юнемана - это очередной
+                      повод поговорить о Конституции. Финальная конфигурация
+                      текстов и судьба Конституции России будет решаться
+                      политиками в соответствующий исторический момент. Важно
+                      готовить и близить этот момент, качать конституционную
+                      мышцу, предлагать позитивную альтернативу. Читать отзыв
+                      целиком
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div
+            class="experts-slider__btn experts-slider__btn--prev r-btn-circle r-btn-circle--solid"
+          >
+            <svg class="s-icon">
+              <use xlink:href="img/svg/sprite1.svg#arrow-left" />
+            </svg>
+          </div>
+          <div
+            class="experts-slider__btn experts-slider__btn--next r-btn-circle r-btn-circle--solid"
+          >
+            <svg class="s-icon">
+              <use xlink:href="img/svg/sprite1.svg#arrow-right" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="reforms__group reforms__group--full" id="video">
+        <h2 class="reforms__suptitle heading-2">Видео</h2>
+
+        <div class="reforms__text">
+          <p>
+            Остались вопросы? В этих видео Роман Юнеман и наши эксперты
+            рассказывают о ключевых политических изменениях новой Конституции
+          </p>
+        </div>
+        <div
+          class="reforms__big-slider big-slider swiper-container js-big-slider"
+        >
+          <div class="swiper-wrapper">
+            <div class="big-slider__slide swiper-slide">
+              <img src="img/common/big-slider-image.jpg" alt="" />
+            </div>
+            <div class="big-slider__slide swiper-slide">
+              <img src="img/common/big-slider-image.jpg" alt="" />
+            </div>
+            <div class="big-slider__slide swiper-slide">
+              <img src="img/common/big-slider-image.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div
+            class="big-slider__btn big-slider__btn--prev r-btn-circle r-btn-circle--solid"
+          >
+            <svg class="s-icon">
+              <use xlink:href="img/svg/sprite1.svg#arrow-left" />
+            </svg>
+          </div>
+          <div
+            class="big-slider__btn big-slider__btn--next r-btn-circle r-btn-circle--solid"
+          >
+            <svg class="s-icon">
+              <use xlink:href="img/svg/sprite1.svg#arrow-right" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reforms__inner" id="voting">
+      <div class="reforms__group reforms__group--full">
+        <h2 class="reforms__suptitle heading-2">Голосование</h2>
+
+        <div class="reforms__text">
+          <p>
+            <b>
+              Работающая и эффективная конституция - плод совместных усилий
+              экспертов и широкой общественности.
+            </b>
+            <br />
+            Мы привлекли больше двухсот подписчиков нашей рассылки к ежедневным
+            голосованиям по самым важным вопросам государственного устройства.
+          </p>
+        </div>
+        <ul class="reforms__facts facts-list list-reset">
+          <li class="facts-list__item">
+            <div class="facts-list__title"><span>21</span> марта</div>
+            <div class="facts-list__text" style="max-width: 165px">
+              <p>прошло онлайн-голосования в чате онлайн-обсуждений</p>
+            </div>
+          </li>
+          <li class="facts-list__item">
+            <div class="facts-list__title"><span>247</span> подписчиков</div>
+            <div class="facts-list__text">
+              <p>
+                рассылки участвовало в опросе <br />
+                при определении тем для <br />
+                обсуждений участниками <br />
+                дискуссии
+              </p>
+            </div>
+          </li>
+          <li class="facts-list__item">
+            <div class="facts-list__title"><span>800</span> человек</div>
+            <div class="facts-list__text">
+              <p>
+                подписались на рассылку <br />
+                Общества.Будущее с запуска <br />
+                проекта
+              </p>
+            </div>
+          </li>
+          <li class="facts-list__item">
+            <div class="facts-list__title"><span>>50 опросов</span></div>
+            <div class="facts-list__text">
+              <p>
+                мы провели за время <br />
+                онлайн-обсуждений
+              </p>
+            </div>
+          </li>
+          <li class="facts-list__item">
+            <div class="facts-list__title"><span>1 мая </span></div>
+            <div class="facts-list__text">
+              <p>мы провели за время онлайн-обсуждений</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__group">
+        <h2 class="reforms__suptitle reforms__suptitle--m-sm heading-2">
+          Итоговое голосование
+        </h2>
+
+        <div class="reforms__text">
+          <p>
+            <b> Поддерживаете ли вы итоговый вариант нашей конституции? </b>
+          </p>
+        </div>
+      </div>
+      <div class="reforms__group reforms__group--full">
+        <div
+          class="reforms__progress-line progress-line"
+          style="--r-progress: 73%"
+        >
+          <div class="progress-line__progress"></div>
+          <div class="progress-line__bottom">
+            <div class="progress-line__left">73% Да</div>
+            <div class="progress-line__right">27% Нет</div>
+          </div>
+        </div>
+      </div>
+      <div class="reforms__group">
+        <div class="reforms__text">
+          Практически все победившие идеи были включены в финальный текст нашей
+          Конституции.
+        </div>
+      </div>
+    </div>
+    <div class="reforms__inner" id="progress">
+      <h2 class="reforms__suptitle heading-2">Ход подготовки проекта</h2>
+      <div class="reforms__suptitle reforms__suptitle--m-sm heading-2">
+        23 января
+      </div>
+      <div class="reforms__video-text">
+        Запуск проекта Общество.Будущееи работы над докладом <br />
+        и проектом Конституции
+      </div>
+      <div class="reforms__video">
+        <iframe
+          width="614"
+          loading="lazy"
+          height="346"
+          src="https://www.youtube.com/embed/OXs0P6hz_7o?si=n14HYM1FNOv_MVvX"
+          title="Progress 1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="reforms__video-text">
+        Общество.Будущее — программа реформ для новой России
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">6 февраля</div>
+      <div class="reforms__video-text">
+        Русская «фабрика мыслей». Что предлагает Юнеман
+      </div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/wKmoLE2g71Y?si=HAhGymQJ96ODisNW"
+          title="Progress 2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">13 февраля</div>
+      <div class="reforms__video-text">
+        Кынев: идеальная конституция существует?
+      </div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/9nnUdg7fl04?si=kfDD0qO87-2MC6fX"
+          title="Progress 3"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">20 февраля</div>
+      <div class="reforms__video-text">
+        5 альтернативных вариантов Конституции РФ
+      </div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/QAvonzsytsQ?si=mO8xeEn2OcrliQu9"
+          title="Progress 4"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">25 февраля</div>
+      <div class="reforms__video-text">Запуск рассылки Общество.Будущее</div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">26 февраля</div>
+      <div class="reforms__video-text">Первый опрос подписчиков рассылки</div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">27 февраля</div>
+      <div class="reforms__video-text">
+        Цзен: чем опасны поправки в Конституцию?
+      </div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/nnPkgNx03fA?si=TagBFBDna4TwCMSC"
+          title="Progress 5"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">4 марта</div>
+      <div class="reforms__video-text">Второй опрос подписчиков рассылки</div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">5 марта</div>
+      <div class="reforms__video-text">Конституция РФ: где русские?</div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/oD-7lLT_XEg?si=2P8loD3u7zQbDPFy"
+          title="Progress 6"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">11 марта</div>
+      <div class="reforms__video-text">
+        Цзен: как Конституция может помочь правосудию
+      </div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/oD-7lLT_XEg?si=pJ2CPgI3oJJenjKj"
+          title="Progress 7"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">14 марта</div>
+      <div class="reforms__video-text">
+        Конституция РФ: какие проблемы она создаёт?
+      </div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/w3M2V1hSb6g?si=z2jpUGwTpQx3137L"
+          title="Progress 8"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">18 марта</div>
+      <div class="reforms__video-text">
+        Подоплелова: о роли Конституционного суда РФ и поправках
+      </div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/kLfqbO9wf8I?si=h28ebo76UaCy_m4P"
+          title="Progress 9"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">21 МАРТА</div>
+      <div class="reforms__video-text">
+        Первое голосование в чате онлайн-обсуждений проекта Конституции от
+        Общества.Будущее
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">27 МАРТА</div>
+      <div class="reforms__video-text">Как работают успешные Конституции?</div>
+      <div class="reforms__video">
+        <iframe
+          loading="lazy"
+          width="614"
+          height="346"
+          src="https://www.youtube.com/embed/ipLuiKqw67Q?si=CahM0zbEO8jsnXZ3"
+          title="Progress 10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">28 МАРТА</div>
+      <div class="reforms__video-text">
+        Видеоконференция участников проекта Общества.Будущее на тему
+        государственного устройства России в тексте Конституции
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">1 МАЯ</div>
+      <div class="reforms__video-text">
+        Последнее голосование в чате онлайн-обсуждений проекта Конституции от
+        Общества.Будущее
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">22 ИЮНЯ</div>
+      <div class="reforms__video-text">
+        Финальное голосование членов Общества.Будущее по тексту Конституции
+      </div>
+    </div>
+    <div class="reforms__inner">
+      <div class="reforms__suptitle heading-2">23 ИЮНЯ</div>
+      <div class="reforms__video-text">
+        Представление текста Конституции на сайте
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,776 @@
+.reforms {
+  overflow: hidden;
+  padding-bottom: 84px;
+
+  // .reforms__inner
+
+  &__inner {
+    line-height: 1.2;
+
+    & + & {
+      margin-top: 64px;
+
+      @media (max-width: $xs) {
+        margin-top: 42px;
+      }
+    }
+
+    .reforms__btn-fixed {
+      display: none;
+    }
+
+    .reforms__btn-info {
+      .reforms__btn-info-show {
+        display: block;
+      }
+
+      .reforms__btn-info-hide {
+        display: none;
+      }
+    }
+
+    &.active {
+      .can-hide {
+        display: block;
+      }
+
+      .reforms__constitution-item {
+        display: block;
+      }
+
+      .reforms__btn-fixed {
+        display: block;
+      }
+
+      .reforms__btn-info {
+        .reforms__btn-info-show {
+          display: none;
+        }
+
+        .reforms__btn-info-hide {
+          display: block;
+        }
+      }
+    }
+  }
+
+  // .reforms__title
+
+  &__title {
+    margin-bottom: 42px;
+
+    @media (max-width: $xs) {
+      margin-bottom: 28px;
+    }
+  }
+
+  // .reforms__menu
+
+  &__menu {
+    display: flex;
+    margin-bottom: 42px;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  // .reforms__item
+
+  &__item {
+    min-width: 297px;
+    text-align: center;
+
+    @media (max-width: $md) {
+      min-width: 180px;
+    }
+
+    @media (max-width: $sm) {
+      min-width: auto;
+    }
+
+    &:not(:last-child) {
+      margin-right: 18px;
+
+      @media (max-width: $sm) {
+        margin: 0 0 24px;
+      }
+    }
+
+    &.active {
+      a {
+        border-color: #000;
+
+        @media (max-width: $sm) {
+          border-color: #424262;
+          opacity: 1;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 0 10px 11px;
+
+      font-size: 17px;
+      font-weight: 500;
+
+      border-bottom: 1px solid transparent;
+
+      transition: border-color 0.2s;
+
+      @media (max-width: $sm) {
+        padding: 0;
+        color: #424262;
+        opacity: 0.6;
+      }
+
+      &:hover {
+        border-color: #000;
+      }
+    }
+  }
+
+  // .reforms__group
+
+  &__group {
+    max-width: 665px;
+
+    &.can-hide {
+      display: none;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    // .reforms__group--full
+
+    &--full {
+      max-width: 100%;
+    }
+
+    // .reforms__group--mb-md
+
+    &--mb-md {
+      &:not(:last-child) {
+        margin-bottom: 42px;
+
+        @media (max-width: $sm) {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    // .reforms__group--mb-lg
+
+    &--mb-lg {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+
+        @media (max-width: $sm) {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    // .reforms__group--mb-xlg
+
+    &--mb-xlg {
+      &:not(:last-child) {
+        margin-bottom: 80px;
+
+        @media (max-width: $sm) {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+
+  // .reforms__suptitle
+
+  &__suptitle {
+    margin-bottom: 32px;
+
+    // .reforms__suptitle--m-sm
+
+    &--m-sm {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .reforms__list
+
+  &__list {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  }
+
+  // .reforms__list-item
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  // .reforms__list-link
+
+  &__list-link {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: #000;
+    }
+  }
+
+  // .reforms__text
+
+  &__text {
+    max-width: 665px;
+    margin-bottom: 24px;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      & + ul {
+        margin-top: -12px;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0 0 0 25px;
+    }
+
+    & > ol {
+      padding: 0;
+      list-style-position: inside;
+
+      &.reforms__list-ol-outside {
+        list-style-position: outside;
+        padding-left: 25px;
+      }
+
+      ul {
+        list-style-type: disc;
+        list-style-position: outside;
+      }
+    }
+
+    &--md {
+      p {
+        margin: 0;
+
+        &:not(:last-child) {
+          // margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  // .reforms__constitution-list
+
+  &__constitution-list {
+    list-style: none;
+    padding-left: 17px;
+  }
+
+  // .reforms__constitution-abc-list
+
+  &__constitution-abc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  // .reforms__constitution-item
+
+  &__constitution-item {
+    display: none;
+
+    &.not-hide {
+      display: block;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  // .reforms__constitution-title
+
+  &__constitution-title {
+    margin-bottom: 12px;
+  }
+
+  // .reforms__constitution-numeric-list
+
+  &__constitution-numeric-list {
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  // .reforms__constitution-numeric-item
+
+  &__constitution-numeric-item {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+
+    &.reforms__constitution-purple,
+    &.reforms__constitution-green {
+      &::before {
+        left: -37px;
+      }
+    }
+  }
+
+  // .reforms__constitution-purple
+
+  &__constitution-purple {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -17px;
+      width: 8px;
+      height: 8px;
+
+      background-color: #5f00b9;
+      border-radius: 50%;
+    }
+  }
+
+  // .reforms__constitution-green
+
+  &__constitution-green {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -17px;
+      width: 8px;
+      height: 8px;
+
+      background-color: #00e055;
+      border-radius: 50%;
+    }
+  }
+
+  // .reforms__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 380px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    // .reforms__row--lg-column
+
+    &--lg-column {
+      @media (max-width: $lg) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .reforms__image {
+        &:not(:last-child) {
+          @media (max-width: $lg) {
+            margin: 0 0 32px;
+          }
+        }
+      }
+    }
+
+    // .reforms__row--sm-column
+
+    &--sm-column {
+      @media (max-width: $sm) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .reforms__image {
+        &:not(:last-child) {
+          @media (max-width: $sm) {
+            margin: 0 0 32px;
+          }
+        }
+      }
+    }
+
+    // .reforms__row--sm-column
+
+    &--xs-column {
+      @media (max-width: $xs) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .reforms__btn-info {
+        &:not(:last-child) {
+          @media (max-width: $xs) {
+            margin: 0 0 12px;
+          }
+        }
+      }
+
+      .reforms__image {
+        &:not(:last-child) {
+          @media (max-width: $xs) {
+            margin: 0 0 32px;
+          }
+        }
+      }
+    }
+  }
+
+  // .reforms__btn-info
+
+  &__btn-info {
+    @media (max-width: $sm) {
+      --r-btn-padding-x: 13px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 26px;
+
+      @media (max-width: $sm) {
+        margin-right: 14px;
+      }
+
+      @media (max-width: $xs) {
+        margin-right: 8px;
+      }
+
+      @media (max-width: 380px) {
+        --r-btn-padding-x: 20px;
+        margin: 0 0 8px;
+      }
+    }
+
+    .reforms__btn-info-hide {
+      display: none;
+    }
+
+    &.active {
+    }
+  }
+
+  // .reforms__constitution-slider
+
+  &__constitution-slider {
+    max-width: 750px;
+  }
+
+  // .reforms__experts-slider
+
+  &__experts-slider {
+    max-width: 1106px;
+    margin-top: 46px;
+  }
+
+  // .reforms__big-slider
+
+  &__big-slider {
+    margin-top: 46px;
+
+    @media (max-width: $sm) {
+      margin-top: 32px;
+    }
+  }
+
+  // .reforms__facts
+
+  &__facts {
+    max-width: 815px;
+    margin-top: 46px;
+
+    &.facts-list--grid {
+      margin-top: 32px;
+    }
+  }
+
+  // .reforms__progress-line
+
+  &__progress-line {
+    max-width: 768px;
+  }
+
+  // .reforms__video-text
+
+  &__video-text {
+    // max-width: 477px;
+    margin: 0 0 16px;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+
+    // .reforms__video-text--md
+
+    &--md {
+      margin-bottom: 38px;
+    }
+  }
+
+  // .reforms__video
+
+  &__video {
+    width: 614px;
+    height: 346px;
+
+    @media (max-width: $sm) {
+      height: 300px;
+      width: 80vw;
+    }
+
+    @media (max-width: $xs) {
+      height: 52vw;
+      width: auto;
+    }
+
+    & + .reforms__video-text {
+      margin-top: 24px;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      border: none;
+
+      @media (max-width: $sm) {
+        // height: auto;
+      }
+    }
+  }
+
+  // .reforms__people
+
+  &__people {
+    margin-top: 42px;
+  }
+
+  // .reforms__our-videos
+
+  &__our-videos {
+    margin-top: 106px;
+
+    @media (max-width: $sm) {
+      margin-top: 42px;
+    }
+  }
+
+  // .reforms__our-videos-title
+
+  &__our-videos-title {
+    margin: 0 0 16px;
+
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  // .reforms__our-videos-text
+
+  &__our-videos-text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  // .reforms__image
+
+  &__image {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      object-fit: contain;
+      height: auto;
+    }
+  }
+
+  // .reforms__violation
+
+  &__violation {
+    max-width: 1140px;
+  }
+
+  // .reforms__violation-list
+
+  &__violation-list {
+  }
+
+  // .reforms__row-under-images
+
+  &__row-under-images {
+    display: flex;
+    align-items: center;
+  }
+
+  // .reforms__row-under-images-first
+
+  &__row-under-images-first {
+    max-width: 434px;
+    width: 100%;
+    margin-right: 19px;
+  }
+
+  // .reforms__row-under-images-second
+
+  &__row-under-images-second {
+  }
+
+  // .reforms__materials
+
+  &__materials {
+  }
+
+  // .reforms__materials-images
+
+  &__materials-images {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1155px;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
+  }
+
+  // .reforms__materials-image
+
+  &__materials-image {
+    position: relative;
+
+    height: 298px;
+    max-width: 558px;
+    width: 100%;
+
+    @media (max-width: $lg) {
+      height: auto;
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @media (max-width: $md) {
+        margin-right: 20px;
+      }
+
+      @media (max-width: $sm) {
+        margin: 0 0 20px;
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      object-fit: contain;
+      height: auto;
+    }
+  }
+
+  // .reforms__materials-btn
+
+  &__materials-btn {
+    --r-btn-padding-x: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // .reforms__double-image-row
+
+  &__double-image-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+    }
+  }
+
+  // .reforms__double-image
+
+  &__double-image {
+    width: 100%;
+    max-width: 50%;
+
+    @media (max-width: $xs) {
+      max-width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+
+      @media (max-width: $xs) {
+        margin: 0 0 24px;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      @include imageCenter;
+    }
+  }
+
+  // .reforms__free-slider
+
+  &__free-slider {
+    // max-width: 1205px;
+  }
+
+  // .reforms__navigation-fixed
+
+  &__navigation-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    z-index: 30;
+  }
+
+  // .reforms__btn-fixed
+
+  &__btn-fixed {
+  }
+}

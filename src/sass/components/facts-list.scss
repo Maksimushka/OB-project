@@ -1,0 +1,54 @@
+.facts-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 42px;
+  row-gap: 29px;
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(3, 154px);
+    column-gap: 24px;
+    row-gap: 24px;
+
+    @media (max-width: $xs) {
+      grid-template-columns: repeat(2, 154px);
+
+      row-gap: 32px;
+    }
+  }
+
+  // .facts-list__item
+
+  &__item {
+  }
+
+  // .facts-list__title
+
+  &__title {
+    margin: 0 0 4px;
+
+    color: #000;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+
+    span {
+      font-size: 32px;
+      font-weight: 900;
+    }
+  }
+
+  // .facts-list__text
+
+  &__text {
+    max-width: 283px;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+
+    p {
+      margin: 0px;
+    }
+  }
+}

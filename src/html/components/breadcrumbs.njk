@@ -1,0 +1,19 @@
+<div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list list-reset">
+      {% for item in itemsForBreadcrumbs %}
+      <!--  -->
+      {% if loop.last %}
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link">{{ item }}</span>
+      </li>
+      {% else %}
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">{{ item }}</a>
+      </li>
+      {% endif %}
+      <!--  -->
+      {% endfor %}
+    </ul>
+  </div>
+</div>

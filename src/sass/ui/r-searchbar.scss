@@ -1,0 +1,102 @@
+.r-searchbar {
+  position: relative;
+
+  // .r-searchbar__label
+
+  &__label {
+  }
+
+  // .r-searchbar__input
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 8px 14px 8px 38px;
+
+    color: #424262;
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color: rgba(#d9d9d9, 0.24);
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.085px;
+
+    &::placeholder {
+      color: rgba(#424262, 0.6);
+    }
+  }
+
+  // .r-searchbar__btn
+
+  &__btn {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      .r-searchbar__icon {
+        fill: #070707;
+      }
+    }
+  }
+
+  // .r-searchbar__icon
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    fill: #424262;
+
+    transition: stroke 0.2s, fill 0.2s;
+  }
+
+  // .r-searchbar__clear
+
+  &__clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 21px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    &:hover {
+      .s-icon {
+        stroke: #5f5f5f;
+      }
+    }
+
+    &:active {
+      .s-icon {
+        stroke: #070707;
+      }
+    }
+
+    .s-icon {
+      stroke: #070707;
+      width: 12px;
+      height: 12px;
+
+      transition: stroke 0.2s;
+    }
+  }
+}

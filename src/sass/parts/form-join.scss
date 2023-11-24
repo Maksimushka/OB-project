@@ -1,0 +1,168 @@
+.form-join {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  // .form-join__overlay
+
+  &__overlay {
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  // .form-join__wrapper
+
+  &__wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    overflow-y: auto;
+    width: 100%;
+    padding: 30px 0;
+
+    pointer-events: none;
+
+    @media (max-width: $xs) {
+      padding: 0;
+      background-color: #ffffff;
+    }
+
+    &--short {
+      @media (max-width: $xs) {
+        background-color: transparent;
+      }
+    }
+  }
+
+  // .form-join__inner
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    padding: 40px 40px 30px 40px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 798px;
+
+    pointer-events: all;
+
+    @media (max-width: $md) {
+      max-width: 95vw;
+    }
+
+    @media (max-width: $sm) {
+      padding: 40px 20px 30px;
+    }
+
+    @media (max-width: $xs) {
+      max-width: 100%;
+      padding-top: 60px;
+    }
+
+    &--short {
+      max-width: 495px;
+
+      @media (max-width: $xs) {
+        max-width: 95vw;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .form-join__close {
+        @media (max-width: $xs) {
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  // .form-join__close
+
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $xs) {
+      top: 20px;
+    }
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+
+    .s-icon {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  // .form-join__header
+
+  &__header {
+    text-align: center;
+    max-width: 530px;
+    margin: 0 auto 40px auto;
+  }
+
+  // .form-join__form
+
+  &__form {
+  }
+
+  // .form__join-support
+
+  &__support {
+    text-align: center;
+
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+
+    @media (max-width: $xs) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 13px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

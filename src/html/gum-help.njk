@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {% set pageTitle = "Гуманитарная помощь" %}
+    <!--  -->
+    {% include "./components/head.njk" %}
+  </head>
+  <body class="body-wrapper">
+    <div class="page-wrapper">
+      <div class="overlay-gradient2 js-animated-gradient">
+        <div class="overlay-gradient2__inner">
+          <div class="span1"></div>
+          <div class="span2"></div>
+          <div class="span3"></div>
+          <div class="span4"></div>
+          <div class="span5"></div>
+          <div class="span6"></div>
+          <div class="span7"></div>
+        </div>
+      </div>
+      {% include "./blocks/header.njk" %}
+      <!--  -->
+
+      <main class="main">
+        <div class="main-menu">
+          <div class="container">
+            <div class="main-menu__inner">
+              <ul class="main-menu__list list-reset">
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="memorandum.html"
+                  >
+                    Меморандум
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="reforms.html"
+                  >
+                    Разработка реформ
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="elections-page.html"
+                  >
+                    Выборы
+                  </a>
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded active"
+                    href="gum-help.html"
+                    >Гуманитарная помощь</a
+                  >
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="regions.html"
+                    >Регионы</a
+                  >
+                </li>
+                <li class="main-menu__item">
+                  <a
+                    class="main-menu__link r-btn r-btn--outlined r-btn--rounded"
+                    href="public-projects-page.html"
+                    >Общественные проекты</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <section class="gum">
+          <div class="container">
+            <ul class="reforms__menu list-reset">
+              <li class="reforms__item active">
+                <a href="gum-help.html">Беженцы</a>
+              </li>
+              <li class="reforms__item">
+                <a href="gum-help2.html">Медикаменты</a>
+              </li>
+            </ul>
+
+            <div class="reforms__group" id="donbas">
+              <h2 class="reforms__suptitle heading-2">Согрей Донбасс</h2>
+
+              <div class="reforms__text">
+                <p>
+                  Проект «Согрей Донбасс» — это самая масштабная гуманитарная
+                  миссия по спасению Донбасса от холодов. <br />
+                  В период с октября по март нам удалось привезти в Мариуполь,
+                  Северодонецк — и ещё немного в Волноваху и на север Донецка —
+                  больше 30 тысяч конвекторных обогревателей, больше 35 тысяч
+                  обогревателей + 10 тысяч одеял. Так мы обеспечили теплом
+                  больше 100 тысяч людей. Никто, включая государство, даже
+                  близко не сделал чего-то сопоставимого по масштабу.
+                </p>
+              </div>
+            </div>
+
+            <div class="reforms__group reforms__group--full">
+              <div
+                class="reforms__free-slider free-slider swiper-container js-free-slider"
+              >
+                <div class="swiper-wrapper">
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/free-1.jpg" width="420" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/free-2.jpg" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/free-3.jpg" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/free-4.jpg" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/1.jpg" width="420" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/2.jpg" width="420" alt="" />
+                  </div>
+                  <div class="free-slider__slide swiper-slide">
+                    <img src="img/gum/3.jpg" width="420" alt="" />
+                  </div>
+                </div>
+                <!-- Add Arrows -->
+                <div
+                  class="free-slider__btn free-slider__btn--prev r-btn-circle r-btn-circle--solid"
+                >
+                  <svg class="s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#arrow-left" />
+                  </svg>
+                </div>
+                <div
+                  class="free-slider__btn free-slider__btn--next r-btn-circle r-btn-circle--solid"
+                >
+                  <svg class="s-icon">
+                    <use xlink:href="img/svg/sprite1.svg#arrow-right" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="reforms__group reforms__group--mb-md">
+              <div class="reforms__text">
+                <p>
+                  За всё это время мы получили почти 190 тысяч сообщений в бот,
+                  из которых сформировали чуть больше 42 тысяч индивидуальных
+                  заявок.
+                  <br />
+                  Суммарно на миссию «Согрей Донбасс» нам удалось собрать ЧИСЛО
+                  миллионов рублей. Всего нам поступило более ЧИСЛО
+                  пожертвований от 25 до 1,5 млн рублей.
+                </p>
+              </div>
+            </div>
+
+            <div class="reforms__group" id="help">
+              <h2 class="reforms__suptitle heading-2">Помощь беженцам</h2>
+
+              <div class="reforms__text reforms__text--md">
+                <p>
+                  ОБ.Помощь — проект адресной гуманитарной помощи людям,
+                  пострадавшим из-за военного конфликта. Они потеряли близких и
+                  друзей, потеряли свои дома и привычный образ жизни. Мы
+                  оперативно организовали поиск информации об эвакуированных,
+                  запустили сбор средств для них и наладили доставку самых
+                  простых, но необходимых вещей. Общество.Будущее оказало помощь
+                  людям в 18 регионах России.
+
+                  <br />
+                  <br />
+
+                  Подробно почитать о проекте и помочь можно по ссылке на сайт
+                  ОБ.Помощь
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+      </main>
+
+      {% include "./blocks/footer.njk" %}
+    </div>
+
+    <!--  -->
+    {% include "./parts/btn-scroll-top.njk" %}
+    <!--  -->
+    {% include "./parts/search-modal.njk" %}
+    <!--  -->
+    {% include "./parts/form-join.njk" %}
+    <!--  -->
+    {% include "./parts/form-support.njk" %}
+    <!--  -->
+    {% include "./components/scripts.njk" %}
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.memorandum {
+  padding-bottom: 65px;
+
+  // .memorandum__inner
+
+  &__inner {
+    margin-bottom: 62px;
+
+    @media (max-width: $md) {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .memorandum__title
+
+  &__title {
+    margin-bottom: 42px;
+
+    @media (max-width: $md) {
+      margin-bottom: 27px;
+    }
+  }
+
+  // .memorandum__suptitle
+
+  &__suptitle {
+    margin-bottom: 32px;
+
+    @media (max-width: $md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .memorandum__row
+
+  &__row {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .memorandum__btn
+
+  &__btn {
+    .s-icon {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  // .memorandum__text
+
+  &__text {
+    max-width: 665px;
+    margin-bottom: 32px;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+
+    // @media (max-width: $sm) {
+    //   display: none;
+    // }
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  // .memorandum__points
+
+  &__points {
+    & + .memorandum__inner {
+      margin-top: 62px;
+    }
+  }
+
+  // .memorandum__points-title
+
+  &__points-title {
+    margin-bottom: 32px;
+  }
+
+  // .memorandum__points-list
+
+  &__points-list {
+    max-width: 1012px;
+  }
+}

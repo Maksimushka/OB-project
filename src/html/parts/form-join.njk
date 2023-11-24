@@ -1,0 +1,159 @@
+<div class="form-join js-form-join">
+  <div class="form-join__overlay overlay js-form-join-close"></div>
+  <div class="form-join__wrapper">
+    <div class="form-join__inner">
+      <button class="form-join__close r-btn js-form-join-close" type="button">
+        <svg class="s-icon">
+          <use xlink:href="img/svg/sprite1.svg#close-icon" />
+        </svg>
+      </button>
+      <div class="form-join__form form-block">
+        <div class="form-join__header form-block__header">
+          <div class="form-block__title">Анкета сторонника</div>
+          <div class="form-block__text">
+            <p>
+              Мы уже есть в 50 регионах. Вы можете присоединиться к движению в
+              вашем регионе, а если там, где вы живете нас еще нет — можете даже
+              открыть свое отделение.
+            </p>
+          </div>
+        </div>
+        <form class="form-block__form error-validation">
+          <div class="form-block__col">
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="fio">
+                Фамилия Имя Отчество
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="fio"
+                placeholder="ФИО"
+              />
+            </div>
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="birth-date">
+                Дата рождения
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="birth-date"
+                placeholder="Дата рождения"
+              />
+            </div>
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="city-living-in">
+                Город проживания
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="city-living-in"
+                placeholder="Город проживания"
+              />
+            </div>
+            <div class="form-block__control r-choice-select">
+              <select class="r-choice-select__control js-choices-select">
+                <option value="">Регион прописки</option>
+                <option value="choice1">Регион 1</option>
+                <option value="choice2">Регион 2</option>
+                <option value="choice1">Регион 3</option>
+                <option value="choice3">Регион 4</option>
+              </select>
+            </div>
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="email">
+                Email
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="email"
+                placeholder="Емэйл"
+              />
+            </div>
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="your-usefulness">
+                Чем вы можете быть полезны?
+              </label>
+              <textarea
+                class="r-control__input r-control__input--textarea"
+                id="your-usefulness"
+                placeholder="Чем вы можете быть полезны?"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-block__col">
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="telegram">
+                Телеграм
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="telegram"
+                placeholder="Телеграм"
+              />
+            </div>
+            <div class="form-block__control r-control r-control--required">
+              <label class="r-control__label sr-only" for="phone">
+                Телефон
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="phone"
+                placeholder="Телефон"
+                required
+              />
+              <div class="r-control__subtitle r-control__subtitle--error">
+                Это поле обязательно к заполнению
+              </div>
+            </div>
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="socials">
+                Социальные сети
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="socials"
+                placeholder="Социальные сети"
+              />
+            </div>
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="friends">
+                Знакомые в ОБ
+              </label>
+              <input
+                class="r-control__input"
+                type="text"
+                id="friends"
+                placeholder="Знакомые в ОБ"
+              />
+              <span class="r-control__subtitle">
+                Кто из членов общества может поручиться за вас?
+              </span>
+            </div>
+            <div class="form-block__control r-control">
+              <label class="r-control__label sr-only" for="about-you">
+                Чем вы можете быть полезны?
+              </label>
+              <textarea
+                class="r-control__input r-control__input--textarea"
+                id="about-you"
+                placeholder="Расскажите о себе"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-block__col form-block__col--full">
+            <button class="form-block__btn-submit r-btn r-btn--solid r-btn--lg">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
