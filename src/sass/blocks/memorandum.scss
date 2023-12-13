@@ -4,11 +4,7 @@
   // .memorandum__inner
 
   &__inner {
-    margin-bottom: 62px;
-
-    @media (max-width: $md) {
-      margin-bottom: 32px;
-    }
+    margin-bottom: 32px;
   }
 
   // .memorandum__title
@@ -78,8 +74,10 @@
   // .memorandum__points
 
   &__points {
+    margin-bottom: 62px;
+
     & + .memorandum__inner {
-      margin-top: 62px;
+      margin-bottom: 62px;
     }
   }
 

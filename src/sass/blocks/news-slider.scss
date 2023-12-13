@@ -30,13 +30,7 @@
   // .news-slider__slide
 
   &__slide {
-    @media (max-width: $lg) {
-      max-width: 198px;
-    }
-
-    @media (max-width: $md) {
-      max-width: 198px;
-    }
+    max-width: 220px;
   }
 
   // .news-slider__btn
