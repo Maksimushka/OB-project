@@ -12,6 +12,33 @@
   // .list-points__item
 
   &__item {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
+  }
+
+  // .list-points__number
+
+  &__number {
+    text-align: right;
+    min-width: 100px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 5.5rem;
+    line-height: 150%;
+    color: #fff;
+    text-shadow: 1px 0 #5f00b9, 0 1px #5f00b9, 0 -1px #5f00b9, -1px 0 #5f00b9;
+    position: relative;
+    margin-right: 30px;
+    top: -2rem;
+
+    @media (max-width: $md) {
+      top: 0;
+      text-align: left;
+    }
   }
 
   // .list-points__title
